@@ -12,5 +12,4 @@ npm i -D typescript
 npx tsc --init
 npm i -D jest @types/jest ts-jest
 npx ts-jest config:init
-npm test
 ```
