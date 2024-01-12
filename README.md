@@ -35,4 +35,8 @@ npm run dev
 
 # 必要ライブラリの導入
 npm i axios
+
+# テスト用セットアップ
+npm i -D jest @types/jest ts-jest
+npm i -D jest-environment-jsdom @testing-library/react @testing-library/jest-dom @testing-library/user-event
 ```
