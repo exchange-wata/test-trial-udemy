@@ -1,7 +1,9 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useState } from 'react';
+
+export const PLACEHOLDER = 'placeholder';
 
 const Form = () => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
@@ -11,12 +13,12 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        type="text"
+        type='text'
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Enter text"
+        placeholder={PLACEHOLDER}
       />
-      <button type="submit">Submit</button>
+      <button type='submit'>Submit</button>
     </form>
   );
 };
